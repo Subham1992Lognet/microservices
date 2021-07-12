@@ -1,0 +1,68 @@
+2053
+1984
+
+ssh -i "subham-ecs.pem" ec2-user@ec2-18-220-178-205.us-east-2.compute.amazonaws.com
+ssh -i "subham-ecs.pem" ec2-user@ec2-3-16-207-239.us-east-2.compute.amazonaws.com
+
+https://lifeandtechindiablog.wordpress.com/2019/01/10/mysql-error-cannot-allocate-memory-for-the-buffer-pool-aws-ec2/
+
+
+sudo systemctl status mongod
+
+        $ sudo systemctl start mongod
+
+        $ sudo systemctl stop mongod
+
+        $ sudo systemctl restart mongod 
+		
+		show dbs ;
+		show dbs;
+		
+		
+		http://ec2-18-220-178-205.us-east-2.compute.amazonaws.com/
+		
+		https://github.com/Cloud-Yeti/aws-ec2-course/blob/master/labs/lab09-instance-logs-using-cloudwatch.MD
+		
+		db.createUser(
+  {
+    user: "root",
+    pwd: "root",
+    roles: [ { role: "readWrite", db: "db_test" }]
+  }
+)
+
+
+spring.jpa.hibernate.ddl-auto=create-drop
+
+
+https://tekneed.com/how-to-install-mysql-in-linux-centos-red-hat-7-8/
+https://devopsmyway.com/install-mongodb-on-ec2/#:~:text=1%20Step%201%E2%80%93%20Update%20Amazon%20Linux%202%202,do%20not%20insert%20any%20data%20in%20this.%20
+
+
+https://github.com/eugenp/tutorials/blob/master/aws-lambda/lambda/src/main/java/com/baeldung/lambda/dynamodb/SavePersonHandler.java
+
+https://github.com/Cloud-Yeti/aws-ec2-course/blob/master/labs/lab09-instance-logs-using-cloudwatch.MD
+
+
+keytool -genkeypair -alias subham -keyalg RSA -keysize 4096 -sigalg SHA256withRSA -dname "cn=cts.com,ou=CTS,dc=example,dc=com" -keypass changeit -startdate "2021/07/12 00:00:00" -validity 365 -storetype PKCS12 -storepass changeit -keystore subham.p12
+
+keytool -certreq -alias subham -sigalg SHA256withRSA -file subham.csr -keypass changeit -keystore subham.p12 -dname "cn=cts.com,ou=CTS,dc=example,dc=com" -storepass changeit -storetype PKCS12
+
+keytool -gencert -rfc -infile subham.csr -outfile subham.crt -alias subham -sigalg SHA256withRSA -dname CN=subham -startdate "2021/07/12 00:00:00" -validity 365 -keypass changeit -keystore subham.p12 -storepass changeit -storetype PKCS12 -v
+
+keytool -genkeypair -alias springboot -keyalg RSA -keysize 4096 -storetype PKCS12 -keystore springboot.p12 -validity 3650 -storepass password
+		
+		
+		UPDATE mysql.user SET Password = PASSWORD('root') WHERE User = 'root';
+		
+		5718
+		7941
+		8131
+		
+		logging.file=/home/ec2-user/jars/log/spring-boot-app.log
+		
+		
+		Select s.* FROM readModel.Stock_Details s WHERE s.company_Code = ?1 order by 1 desc limit 1
+		
+		
+		java -jar company-service-0.0.1-SNAPSHOT.jar --logging.file.name=/home/ec2-user/jars/log/company-service-write-app.log --logging.pattern.console= &

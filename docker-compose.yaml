@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  zuul-service:
+    image: tech_iiht_subham_01/zuul-gateway:latest
+    ports:
+      - "8100:8100"
+    
+    depends_on:
+      - naming-server
+    environment:
+      EUREKA.CLIENT.SERVICE-URL.DEFAULT-ZONE: http://localhost:8761/eureka
+    networks:
+      - subham-network
+      
+  naming-server:
+    image: tech_iiht_subham_01/naming-server:latest
+    ports:
+      - "8761:8761"
+    networks:
+      - subham-network
+      
+  
+    
+networks:
+  subham-network:
