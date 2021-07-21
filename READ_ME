@@ -66,3 +66,28 @@ keytool -genkeypair -alias springboot -keyalg RSA -keysize 4096 -storetype PKCS1
 		
 		
 		java -jar company-service-0.0.1-SNAPSHOT.jar --logging.file.name=/home/ec2-user/jars/log/company-service-write-app.log --logging.pattern.console= &
+		
+		
+		
+		
+		server.port = 8100
+spring.application.name =netlix-zuul-consumer-service
+
+eureka.client.service-url.default-zone=http://localhost:8761/eureka
+
+public.ecr.aws/w7l6a3d2/subham:0.0.1.RELEASE
+
+4h51cjfnkfbhbogk3ldeviipb4
+p4ktqt4ei85q3n8nk180fj12nbb5sa5mjig1no2nerpmd4merp2
+
+aws cognito-idp admin-confirm-sign-up --region us-east-2 --user-pool-id us-east-2_BvdFojYu6 --username subhamc595@gmail.com
+
+aws cognito-idp sign-up --region us-east-2 --client-id 4h51cjfnkfbhbogk3ldeviipb4 --username subhamc595@gmail.com --password password123
+
+aws cognito-idp admin-set-user-password --user-pool-id us-east-2_BvdFojYu6 --username subhamc595@gmail.com --password Kol@2021 --permanent
+
+aws cognito-idp admin-initiate-auth --region us-east-2 --cli-input-json file://auth.json
+
+aws cognito-idp initiate-auth --auth-flow USER_PASSWORD_AUTH --client-id 5a8a3rf6i55u5n6542ap7r1if3 --auth-parameters USERNAME=subhamc595@gmail.com,PASSWORD=Kol@2021
+
+eyJraWQiOiJxQ1dhOFwvWlVHRHZweExUZlFwa3pOUlNxYkJ0MzU4SVN5djZlb215dmw4az0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJiMGU1MjVjNy1jMGY1LTRhMTEtOGM0YS0xYmI1ZmExZjk0YjYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMi5hbWF6b25hd3MuY29tXC91cy1lYXN0LTJfQnZkRm9qWXU2IiwiY29nbml0bzp1c2VybmFtZSI6ImIwZTUyNWM3LWMwZjUtNGExMS04YzRhLTFiYjVmYTFmOTRiNiIsIm9yaWdpbl9qdGkiOiJlM2RhNmFhYi03MGFiLTQ4NTQtYmU0Mi05ZTEzN2FlN2E4NmUiLCJhdWQiOiI1YThhM3JmNmk1NXU1bjY1NDJhcDdyMWlmMyIsImV2ZW50X2lkIjoiODNkYTQ3ZmEtYzU0MS00MDM2LTliOTMtNzg0MzdiODZlMDY4IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2MjY0NDI4OTksImV4cCI6MTYyNjQ0NjQ5OSwiaWF0IjoxNjI2NDQyODk5LCJqdGkiOiI2MzU4MzhmNi0xZTBlLTQzNzAtYWExZC1hNmJlZDg4OTE1YmUiLCJlbWFpbCI6InN1YmhhbWM1OTVAZ21haWwuY29tIn0.kkaw7WpbmeYS78ITpUdjl35ph-SjOZhZ-leWu6N5g76IN4pdYcETMfcl-99jb8TzedKxA3JA5DzE9tX1vI45xNUnJskVgjANvs4JbNE770AW2HnZPhECUsD-tFZxYNRgKrqg6iRf57yJrmhDAnqNRhYGEjqKIh45pSzf1YQiazVFJvlr-dMGqLNK6rrET3BL2Il2B3D9CrCAVW0zFKvse6vv0tyTAhxFQFuXMqu16obW5JYfKWDoCOs7EMf3NozfJWwmvgo2MP6NJlaPUdD9JTcHgN3hMr-XmLhqdaUBwdbleiMq_H1ZoDWsF_tQZ1ufaXLqOnwZYxcgrffN4wRRCA
